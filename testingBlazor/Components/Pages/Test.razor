@@ -1,0 +1,13 @@
+﻿@page "/test"
+@using testingBlazor.Components.Pages
+
+<h3>@Counter</h3>
+<button @onclick="Increment">Click</button>
+
+@code {
+    private int Counter = 0;
+    private void Increment()
+    {
+        Counter++;
+    }
+}
